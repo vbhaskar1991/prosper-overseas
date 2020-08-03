@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#d2c3de">
+    <meta name="msapplication-navbutton-color" content="#d2c3de">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#d2c3de">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <title>Prosper overseas</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <!-- <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/prosper-overseas.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper-main-log">
+        <div class="loader">
+            <div class="loaderin">
+                <div class="loaderlogo"><img src="img/new/new-logo.png" width="292" alt=""></div>
+                <div class="loader-circle"></div>
+            </div>
+        </div>
+
+        <div class="wrapper-signin wrapper-signin-log">
+            <div class="d-block w-100">
+                <div class="wrapper-signin-inner">
+                    <div class="row m-0">
+                        <div class="col-12 col-sm-12 col-md-5 wrapper-signin-inner-lft">
+                            <div class="sign-logo">
+                                <a>
+                                    <img src="img/log-logo.png" width="120">
+                                </a>
+                            </div>
+                            <div class="max-300 text-center log-card">
+                                <h2 class="heading-20 blk-clr">Welcome</h2>
+                                <p class="font-13 p-0 m-0 blk-clr">Don't have an account?</p>
+                                <div class="signupBtn">
+                                    <a href="#" class="btn btn-blue letter-sp-2 max-150">SIGN UP</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 wrapper-signin-inner-rgt">
+                            <div class="max-350 text-center" id="step-1">
+                                <h2 class="heading-20 mb-20 color-blue">LOGIN</h2>
+                                <a class="social-login fb-bg mb-15" href="#">
+                                    <img alt="image" class="icon-social" src="img/facebook.svg" width="22" height="22">
+                                    <span> Log in with Facebook</span>
+                                </a>
+                                <a class="social-login google-bg mb-15" href="#">
+                                    <img alt="image" class="icon-social" src="img/googleicon.svg" width="22"
+                                        height="22">
+                                    <span> Log in with Google</span>
+                                </a>
+
+                                <h2 class="heading-20 mb-20 color-blue">OR</h2>
+
+                                <div class="form-group text-left">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" placeholder="email address" name="name" type="email">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Password</label>
+                                    <input class="form-control" type="password" placeholder="password" name="password">
+                                </div>
+                                <div class="mb-15 mt-15 text-left">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-left">
+                                    <!--                                    <button type="submit" class="btn btn-log">Log in</button>-->
+                                    <a href="dashboard.html" class="btn btn-log">Log in</a>
+                                </div>
+                                <div class="forgot-list mb-4">
+                                    <a href="#" class="forgot-password">Forgot password?</a>
+                                    <a href="#" class="locked-account">Locked Account?</a>
+                                </div>
+                                <div class="dont-have-account-box">
+                                    <a class="dnt-account">Don't have an account?</a>
+                                    <div class="forgot-list" id="dnt-have-account" style="display: none;">
+                                        <a href="#" class="register-student">Register as student</a>
+                                        <a href="#" class="register-recruitment">Register as recruitment partner</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="max-350 text-center" id="step-2">
+                                <h2 class="heading-20 color-blue">Reset Password</h2>
+                                <p class="mb-20">Enter your email address to reset your password</p>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" placeholder="name@example.com" name="name" type="email">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-log">Reset Password</button>
+                                </div>
+                                <div class="forgot-list">
+                                    <p>Already have an account? <a href="#" class="login"><b>Login</b></a></p>
+                                </div>
+                            </div>
+
+                            <div class="max-350 text-center" id="step-3">
+                                <h2 class="heading-10  color-blue">Send unlock instructions</h2>
+                                <p class="mb-20">Enter your email address to send unlock instructions</p>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" placeholder="" name="name" type="email">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-log">Send unlock instructions</button>
+                                </div>
+                                <div class="forgot-list text-center">
+                                    <p class="w-100">Already have an account? <a href="#" class="login"><b>Login</b></a>
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="max-350 text-center" id="step-4">
+                                <h4 class="heading-10 color-blue mb-4">Complete Your Registration to Start Applying to
+                                    Schools</h4>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Email</label>
+                                    <input class="form-control" placeholder="" name="name" type="email">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Password</label>
+                                    <input class="form-control" type="password" placeholder="" name="password">
+                                </div>
+                                <div class="form-group text-left">
+                                    <label class="form-label">Confirm password</label>
+                                    <input class="form-control" type="password" placeholder="" name="password">
+                                </div>
+
+
+                                <div class="form-group text-left">
+                                    <button type="submit" class="btn btn-log">Register Now</button>
+                                </div>
+                                <div class="forgot-list text-center">
+                                    <p class="w-100">Already have an account? <a href="#" class="login"><b>Login</b></a>
+                                    </p>
+                                </div>
+
+                                <p class="text-left">By joining prosper Overseas, you agree to prosper Overseas's <a
+                                        href="#"><b>Student Terms & Conditions</b></a> , <a href="#"><b>Privacy
+                                            Policy</b></a> and <a href="#"><b>Terms of Use</b></a>.</p>
+
+                            </div>
+
+
+                            <div class="max-500" id="step-5">
+                                <div class="partner-box">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                                role="tab" aria-controls="home" aria-selected="true">Company Information
+                                                <span aria-hidden="true"
+                                                    class="fa fa-exclamation-circle red"></span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                                role="tab" aria-controls="profile" aria-selected="false">Contact
+                                                Information <span aria-hidden="true"
+                                                    class="fa fa-exclamation-circle red"></span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact"
+                                                role="tab" aria-controls="contact" aria-selected="false">Recruitment
+                                                Details <span aria-hidden="true"
+                                                    class="fa fa-exclamation-circle red"></span></a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane active" id="home" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="information-box mCustomScrollbar" data-mcs-theme="inset-2-dark">
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Company Name <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Email <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Website</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Facebook Page Name</label>
+                                                    <input class="form-control"
+                                                        placeholder="e.g. www.facebook.com/prosperoverseas" name="name"
+                                                        type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Instagram Handle</label>
+                                                    <input class="form-control" placeholder="e.g. @prosperoverseas"
+                                                        name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Twitter Handle</label>
+                                                    <input class="form-control" placeholder="e.g. @prosperoverseas"
+                                                        name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Linkedin URL</label>
+                                                    <input class="form-control" placeholder="e.g. @prosperoverseas"
+                                                        name="name" type="email">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="input-group mb-3 group-end">
+                                                <a class="btn btn-blue mx-right max-150 btnNext">Next</a>
+                                            </div>
+                                            <!--/. form element wrap -->
+
+                                        </div>
+                                        <div class="tab-pane" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <div class="information-box mCustomScrollbar" data-mcs-theme="inset-2-dark">
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Main Source of
+                                                        Students<span>*</span></label>
+                                                    <select class="form-control m-b" name="account">
+                                                        <option>Select..</option>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                        <option>option 3</option>
+                                                        <option>option 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Legal First Name <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Legal Last Name <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Street Address <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">City <span>*</span></label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">State/Province</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Country <span>*</span></label>
+                                                    <select class="form-control m-b" name="account">
+                                                        <option>Select..</option>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                        <option>option 3</option>
+                                                        <option>option 4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Postal Code</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+
+                                                <div class="form-group text-left flag-input">
+                                                    <label class="control-label required-label" for="">Phone
+                                                        <span>*</span></label>
+                                                    <input type="tel" id="" class="form-control tele-number"
+                                                        placeholder="" value="+91 40 4910 8888">
+                                                </div>
+
+                                                <div class="form-group text-left flag-input">
+                                                    <label class="form-label">Cellphone</label>
+                                                    <input type="tel" id="" class="form-control tele-number"
+                                                        placeholder="" value="+91 40 4910 8888">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Skype ID</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">WhatsApp ID</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Has anyone from ApplyBoard helped or
+                                                        referred you?</label>
+                                                    <select class="form-control m-b" name="account">
+                                                        <option>Select..</option>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                        <option>option 3</option>
+                                                        <option>option 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3 group-end">
+                                                <div class="prev-next-box">
+                                                    <a class="btn btn-blue max-150 btnPrevious">Previous</a>
+                                                    <a class="btn btn-blue max-150 btnNext">Next</a>
+                                                </div>
+                                            </div>
+                                            <!--/. form element wrap -->
+
+                                        </div>
+                                        <div class="tab-pane" id="contact" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <div class="information-box mCustomScrollbar" data-mcs-theme="inset-2-dark">
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">When did you begin recruiting
+                                                        students?</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">What services do you provide to your
+                                                        clients? <span>*</span></label>
+                                                    <textarea class="form-control" placeholder="Message" id="hear_about"
+                                                        rows="2"></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="newCheck1">
+                                                        <label class="custom-control-label" for="newCheck1">Canadian
+                                                            Schools Represented</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="newCheck2">
+                                                        <label class="custom-control-label" for="newCheck2">American
+                                                            Schools Represented</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="newCheck3">
+                                                        <label class="custom-control-label" for="newCheck3">Represents
+                                                            Other Countries</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">What institutions are you
+                                                        representing?</label>
+                                                    <textarea class="form-control" placeholder="Message" id="hear_about"
+                                                        rows="2"></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">What educational associations or groups
+                                                        does your organization belong to? <span>*</span></label>
+                                                    <textarea class="form-control" placeholder="Message" id="hear_about"
+                                                        rows="2"></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Where do you recruit from?</label>
+                                                    <select class="form-control m-b" name="account">
+                                                        <option>Select..</option>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                        <option>option 3</option>
+                                                        <option>option 4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label>Approximately how many students do you send abroad per
+                                                        year?</label>
+                                                    <div class="radio-box-align">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                id="customRadio1" name="customRadio1">
+                                                            <label class="custom-control-label" for="customRadio1">1 -
+                                                                5</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio1" id="newradio1">
+                                                            <label class="custom-control-label" for="newradio1">6 -
+                                                                20</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio1" id="newradio2">
+                                                            <label class="custom-control-label" for="newradio2">21 -
+                                                                50</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio1" id="newradio3">
+                                                            <label class="custom-control-label" for="newradio3">51 -
+                                                                250</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio1" id="newradio4">
+                                                            <label class="custom-control-label"
+                                                                for="newradio4">251+</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">What type of marketing methods do you
+                                                        undertake? <span>*</span></label>
+                                                    <select class="form-control m-b" name="account">
+                                                        <option>Select..</option>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                        <option>option 3</option>
+                                                        <option>option 4</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label>Average Service Fee <span>*</span></label>
+                                                    <div class="radio-box-align">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                id="customRadio22" name="customRadio22">
+                                                            <label class="custom-control-label" for="customRadio22">$0 -
+                                                                $200</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio22" id="newradio21">
+                                                            <label class="custom-control-label" for="newradio21">$200 -
+                                                                $500</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio22" id="newradio22">
+                                                            <label class="custom-control-label" for="newradio22">$500 -
+                                                                $1000</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio22" id="newradio23">
+                                                            <label class="custom-control-label" for="newradio23">$1000 -
+                                                                $2500</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio22" id="newradio24">
+                                                            <label class="custom-control-label"
+                                                                for="newradio24">$2500+</label>
+                                                        </div>
+                                                    </div>
+                                                    <p>Please provide an estimate of the number of students you will
+                                                        refer to</p>
+                                                </div>
+
+
+                                                <div class="form-group text-left">
+                                                    <label>ApplyBoard <span>*</span></label>
+                                                    <div class="radio-box-align">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                id="customRadio32" name="customRadio32">
+                                                            <label class="custom-control-label" for="customRadio32">1 -
+                                                                5</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio32" id="newradio31">
+                                                            <label class="custom-control-label" for="newradio31">6 -
+                                                                20</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio32" id="newradio32">
+                                                            <label class="custom-control-label" for="newradio32">21 -
+                                                                50</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio32" id="newradio33">
+                                                            <label class="custom-control-label" for="newradio33">51 -
+                                                                250</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" class="custom-control-input"
+                                                                name="customRadio32" id="newradio34">
+                                                            <label class="custom-control-label"
+                                                                for="newradio34">251+</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Additional Comments</label>
+                                                    <textarea class="form-control" placeholder="" id="hear_about"
+                                                        rows="2"></textarea>
+                                                </div>
+                                                <hr>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Reference Name</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Reference Institution Name</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Reference Business Email</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+
+
+                                                <div class="form-group text-left flag-input">
+                                                    <label class="form-label">Reference Phone</label>
+                                                    <input type="tel" id="" class="form-control tele-number"
+                                                        placeholder="" value="+91 40 4910 8888">
+                                                </div>
+
+                                                <div class="form-group text-left">
+                                                    <label class="form-label">Reference Website</label>
+                                                    <input class="form-control" placeholder="" name="name" type="email">
+                                                </div>
+
+
+                                                <div class="max-300">
+                                                    <div class="form-group text-left">
+                                                        <div class="input-group mb-3">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input"
+                                                                    id="myInput" aria-describedby="myInput">
+                                                                <label class="custom-file-label" for="myInput">Company
+                                                                    Logo</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group text-left">
+                                                        <div class="input-group mb-3">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input1"
+                                                                    id="myInput1" aria-describedby="myInput1">
+                                                                <label class="custom-file-label" for="myInput1">Business
+                                                                    Certificate</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                            id="customCheck2">
+                                                        <label class="custom-control-label" for="customCheck2">I declare
+                                                            that the information contained in this application and all
+                                                            supporting documentation is true and correct.
+                                                            <span>*</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="input-group mb-3 group-end">
+                                                <div class="prev-next-box">
+                                                    <a class="btn btn-blue max-150 btnPrevious">Previous</a>
+                                                    <a class="btn btn-blue max-150 btnSubmit">Submit</a>
+                                                </div>
+                                            </div>
+                                            <!--/. form element wrap -->
+
+                                        </div>
+                                    </div>
+                                    <div class="forgot-list text-center">
+                                        <p class="w-100">Already have an account? <a href="#"
+                                                class="login"><b>Login</b></a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div id="push"></div>
+
+            </div>
+            <div class="copy-right-blk">
+                <a>Copyright ©2020 prosper Overseas</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".dont-have-account-box .dnt-account").click(function () {
+                $("#dnt-have-account").toggle('slow');
+            });
+
+            $('#step-1 .forgot-password').click(function () {
+                $('#step-2').show(2000);
+                $('#step-1').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+            $('#step-2 .login').click(function () {
+                $('#step-1').show(2000);
+                $('#step-2').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+
+            $('#step-1 .locked-account').click(function () {
+                $('#step-3').show(2000);
+                $('#step-1').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+            $('#step-3 .login').click(function () {
+                $('#step-1').show(2000);
+                $('#step-3').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+
+            $('#step-1 .register-student').click(function () {
+                $('#step-4').show(2000);
+                $('#step-1').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+            $('#step-4 .login').click(function () {
+                $('#step-1').show(2000);
+                $('#step-4').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+
+            $('#step-1 .register-recruitment').click(function () {
+                $('#step-5').show(2000);
+                $('#step-1').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+            $('#step-5 .login').click(function () {
+                $('#step-1').show(2000);
+                $('#step-5').hide(2000);
+                $("html, body").animate({ scrollTop: 0 });
+            });
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+            var fileName = document.getElementById("myInput").files[0].name;
+            var nextSibling = e.target.nextElementSibling
+            nextSibling.innerText = fileName
+        })
+        document.querySelector('.custom-file-input1').addEventListener('change', function (e) {
+            var fileName = document.getElementById("myInput1").files[0].name;
+            var nextSibling = e.target.nextElementSibling
+            nextSibling.innerText = fileName
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.btnNext').click(function () {
+                $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+            });
+
+            $('.btnPrevious').click(function () {
+                $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+            });
+        }); 
+    </script>
+
+    <script> $(".tele-number").intlTelInput({ onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk", "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "in", "it", "lv", "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro", "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "us", "gb"] });</script>
+
+
+
+
+
+
+</body>
+
+</html>

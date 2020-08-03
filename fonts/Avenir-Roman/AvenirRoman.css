@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AvenirRoman';
+    src: url('fonts/AvenirRoman.eot');
+    src: url('fonts/AvenirRoman.eot') format('embedded-opentype'),
+         url('fonts/AvenirRoman.woff2') format('woff2'),
+         url('fonts/AvenirRoman.woff') format('woff'),
+         url('fonts/AvenirRoman.ttf') format('truetype'),
+         url('fonts/AvenirRoman.svg#AvenirRoman') format('svg');
+}

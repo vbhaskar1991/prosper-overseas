@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('fonts/AvenirMedium.eot');
+    src: url('fonts/AvenirMedium.eot') format('embedded-opentype'),
+         url('fonts/AvenirMedium.woff2') format('woff2'),
+         url('fonts/AvenirMedium.woff') format('woff'),
+         url('fonts/AvenirMedium.ttf') format('truetype'),
+         url('fonts/AvenirMedium.svg#AvenirMedium') format('svg');
+}
