@@ -60,14 +60,19 @@
                             <div class="max-300 text-center log-card">
                                 <h2 class="heading-20 blk-clr">Welcome</h2>
                                 <p class="font-13 p-0 m-0 blk-clr">Don't have an account?</p>
-                                <div class="signupBtn">
-                                    <a href="#" class="btn btn-blue letter-sp-2 max-150">SIGN UP</a>
+                                <div class="signupBtn dont-have-account-box">
+                                    <a class="btn btn-blue letter-sp-2 max-150 dnt-account">SIGN UP</a>
+                                    <div class="sign-up" id="dnt-have-account" style="display: none;">
+                                        <a href="#" class="register-student">Register as student</a>
+                                        <a href="#" class="register-recruitment">Register as recruitment partner</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-7 wrapper-signin-inner-rgt">
                             <div class="max-350 text-center" id="step-1">
                                 <h2 class="heading-20 mb-20 color-blue">LOGIN</h2>
+<!--
                                 <a class="social-login fb-bg mb-15" href="#">
                                     <img alt="image" class="icon-social" src="img/facebook.svg" width="22" height="22">
                                     <span> Log in with Facebook</span>
@@ -79,6 +84,7 @@
                                 </a>
 
                                 <h2 class="heading-20 mb-20 color-blue">OR</h2>
+-->
 
                                 <div class="form-group text-left">
                                     <label class="form-label">Email</label>
@@ -102,14 +108,7 @@
                                 <div class="forgot-list mb-4">
                                     <a href="#" class="forgot-password">Forgot password?</a>
                                     <a href="#" class="locked-account">Locked Account?</a>
-                                </div>
-                                <div class="dont-have-account-box">
-                                    <a class="dnt-account">Don't have an account?</a>
-                                    <div class="forgot-list" id="dnt-have-account" style="display: none;">
-                                        <a href="#" class="register-student">Register as student</a>
-                                        <a href="#" class="register-recruitment">Register as recruitment partner</a>
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
 
 
@@ -632,7 +631,7 @@
 
     <script>
         $(document).ready(function () {
-            $(".dont-have-account-box .dnt-account").click(function () {
+            $(".wrapper-signin-inner .dont-have-account-box .dnt-account").click(function () {
                 $("#dnt-have-account").toggle('slow');
             });
 
@@ -658,9 +657,10 @@
                 $("html, body").animate({ scrollTop: 0 });
             });
 
-            $('#step-1 .register-student').click(function () {
+            $('.wrapper-signin-inner .dont-have-account-box .register-student').click(function () {
                 $('#step-4').show(2000);
                 $('#step-1').hide(2000);
+                 $("#dnt-have-account").toggle('slow');
                 $("html, body").animate({ scrollTop: 0 });
             });
             $('#step-4 .login').click(function () {
@@ -669,9 +669,10 @@
                 $("html, body").animate({ scrollTop: 0 });
             });
 
-            $('#step-1 .register-recruitment').click(function () {
+            $('.wrapper-signin-inner .dont-have-account-box .register-recruitment').click(function () {
                 $('#step-5').show(2000);
                 $('#step-1').hide(2000);
+                 $("#dnt-have-account").toggle('slow');
                 $("html, body").animate({ scrollTop: 0 });
             });
             $('#step-5 .login').click(function () {
