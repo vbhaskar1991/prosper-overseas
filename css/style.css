@@ -2895,6 +2895,7 @@ section.timeline-outer { width: 100%; margin-left: auto; }
 }
 @media (max-width: 576px) {
 /*===== self =====*/
+    .search-box{display: block !important;}    
 .search-form { width: auto !important; padding-left: 10px; padding-right: 10px; }
 .search-form .form-control { height: 45px!important; margin-bottom: 12px; }
 .search-form .form-control.right { background: #2A166F; color: #fff; }
@@ -4279,18 +4280,28 @@ transform: rotate(360deg);
     .school-align-center{    padding-left: 14px;}
     
 }
-@media(max-width:1079px) and (min-width:767px){
+@media(max-width:1089px) and (min-width:767px){
+    .program-box .account-blk h4{    font-size: 15px; line-height: 18px;}
+    .program-box .user-panel .info h6{    font-size: 15px !important;}
+    .schools-box .user-panel .image img{    width: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    height: 30px;
+    min-height: 30px;}
     .program-step-2 .form-control{    margin-top: 15px;
     margin-bottom: 15px;}
     .perfect-program h3{font-size: 17px;}
-    .dashboard-tabs .nav-tabs{justify-content: center;}
+    .dashboard-tabs .nav-tabs{    justify-content: center !important; }
     .filter-box .btn-blue{padding: 9px 5px; letter-spacing: 0px;}
      .features-box .ul-box ul li{width: 100%; max-width: 200px;
     margin: 0 auto;
     margin-bottom: 30px;}
     .features-box .ul-box ul{display: block; text-align: center;}
     .schools-box .image{    text-align: center;
-    min-width: 70px;
+    min-width: 40px !important;     max-width: 40px !important;
+    max-height: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
     width: 100% !important;
     margin: 0 auto;
     float: none !important;}
@@ -4312,10 +4323,12 @@ transform: rotate(360deg);
     .schools-box .user-panel .info p{font-size: 14px !important;}
 }
 @media (max-width: 767px) {
+    .col-main-search{display: block !important;}
       .program-step-2 .form-control{    margin-top: 15px;
     margin-bottom: 15px;}
     .perfect-program h3{font-size: 17px;}
-     .dashboard-tabs .nav-tabs{justify-content: center;}
+     .dashboard-tabs .nav-tabs{justify-content: left;   margin-left: 0px;
+    margin-top: 20px;}
     .mobile-align-center{    display: flex;
     align-items: center;
     justify-content: center;}
@@ -4326,8 +4339,7 @@ transform: rotate(360deg);
     float: none !important;}
     .school-align-center{    text-align: center;
     padding: 10px 5px 0px; width: 100%;}
-    .school-align-center h6{font-size: 16px !important; line-height: 19px !important;}
-    .dashboard-tabs .nav-tabs{justify-content: center !important;}
+    .school-align-center h6{font-size: 16px !important; line-height: 19px !important;} 
     .program-box .account-blk h4{font-size: 16px; line-height: 19px;}
     .program-box .user-panel .info h6{    font-size: 18px; line-height: 20px;}
     .imp-student-accord-blk-bottom{padding-left: 10px; padding-right: 10px;}
@@ -4350,3 +4362,7 @@ transform: rotate(360deg);
 .eligibility-box ol{ padding-left: 30px;}
 .home-link{padding: 0px !important;}
 .home-link:hover{background-color: transparent !important;}
+.search-box{display:flex;}
+@media(max-width:1180px) and (min-width:992px){
+    .dashboard-tabs .nav-tabs .nav-link{min-width: 120px;}
+}
