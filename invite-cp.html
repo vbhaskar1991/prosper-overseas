@@ -345,486 +345,515 @@
                     <div class="page-top-breadcrumb mb-3">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
-                            <li class="breadcrumb-item active"><a href="#">Students</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Profile</a></li>
                         </ol>
                     </div>
-                    <div class="std-datatable-main">
-                        <div class="form-group">
-                            <button class="btn btn-blue letter-sp-2" data-target="#registerstd-modal"
-                                data-toggle="modal"> Register a New Student</button>
-                        </div>
-                        <div class="table-pagination">
-                            <div class="table-pagination-center justify-content-end">
-                                <span class="table-pagination-center-pageInfo">Page <div
-                                        class="table-pagination-center-pageJump">
-                                        <input class="form-control" type="number" value="1">
-                                    </div> of <span class="-totalPages">1</span></span>
+                    <div class="profile-tab-main">
+                        <div class="row">
+                            <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+                                <div class="profile-tabs">
+                                    <ul class="nav nav-tabs" id="myTabProfile" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="generalinfo-tab" data-toggle="tab"
+                                                href="#generalinfo" role="tab" aria-controls="generalinfo"
+                                                aria-selected="true">General Information</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="bankinginfo-tab" data-toggle="tab"
+                                                href="#bankinginfo" role="tab" aria-controls="bankinginfo"
+                                                aria-selected="false">Banking Information</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="schoolcomission-tab" data-toggle="tab"
+                                                href="#schoolcomission" role="tab" aria-controls="schoolcomission"
+                                                aria-selected="false">School Commissions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="invitestudents-tab" data-toggle="tab"
+                                                href="#invitestudents" role="tab" aria-controls="invitestudents"
+                                                aria-selected="false">Invite Students</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="commissionpolicy-tab" data-toggle="tab"
+                                                href="#commissionpolicy" role="tab" aria-controls="commissionpolicy"
+                                                aria-selected="false">Commission Policy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="managestaff-tab" data-toggle="tab"
+                                                href="#managestaff" role="tab" aria-controls="managestaff"
+                                                aria-selected="false">Manage Staff</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-8 col-md-8 col-lg-9">
+                                <div class="profile-tab-content">
+                                    <div class="tab-content " id="myTabContentProfile">
+                                        <div class="tab-pane" id="generalinfo" role="tabpanel"
+                                            aria-labelledby="generalinfo-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <h3 class="font-weight-normal text-center">Your Recruitment Partner ID:
+                                                    213164</h3>
+                                                <h2 class="font-weight-normal text-center">General Information</h2>
+                                                <div class="row pt-3 pt-md-4 form-group">
+                                                    <div class="col-12 col-sm-6 col-md-4">
+                                                        <label class="control-label" for="">Company Logo</label>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="uploaded-logo">
+                                                            <a href="#"> <img src="img/logo.png"
+                                                                    class="img-fluid mx-auto" alt=""></a>
+                                                            <button href="#"
+                                                                class="badge badge-danger badge-close"><span
+                                                                    aria-hidden="true">×</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-3 pt-md-4 form-group">
+                                                    <div class="col-12 col-sm-6 col-md-4">
+                                                        <label class="control-label" for="">Business
+                                                            Certificate/Passport</label>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="uploaded-logo">
+                                                            <a href="#"><i class="fa fa-download"
+                                                                    aria-hidden="true"></i></a>
+                                                            <button href="#"
+                                                                class="badge badge-danger badge-close"><span
+                                                                    aria-hidden="true">×</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Company Name
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="Prosper Overseas ( A Division of Prosper Education Pvt Ltd )"
+                                                        disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Website </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="www.prosperoverseas.com" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Skype ID </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="prosperoverseashyd@outlook.com" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">WhatsApp ID </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="9885560884" disabled>
+                                                </div>
+
+                                                <h2 class="font-weight-normal text-center">Contact Information</h2>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Legal First Name
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="Prosper" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Legal Last Name </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="Overseas" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Email </label>
+                                                    <input type="email" class="form-control" placeholder="" id=""
+                                                        value="director@prosperoverseas.com" disabled>
+                                                </div>
+                                                <div class="form-group flag-input">
+                                                    <label class="control-label required-label" for="">Phone </label>
+                                                    <input type="tel" id="" class="form-control tele-number"
+                                                        placeholder="" value="+91 40 4910 8888" disabled>
+                                                </div>
+                                                <div class="form-group flag-input">
+                                                    <label class="control-label" for="">Cellphone </label>
+                                                    <input type="tel" id="" class="form-control tele-number"
+                                                        placeholder="" value="+91 98855 60884" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Main Source of
+                                                        Students </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="India" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Street Address
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="7-1-27/6, Behind Green Park Hotel, Green Lands, Ameerpet"
+                                                        disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">City </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="Hyderabad" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">State/Province </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="Telangana" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label required-label" for="">Country</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="India" disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Postal Code </label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="500016" disabled>
+                                                </div>
+                                                <div class="form-group pt-2 pt-md-3 text-center">
+                                                    <button class="btn btn-blue btn-block max-250 letter-sp-2"
+                                                        disabled>Save</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="bankinginfo" role="tabpanel"
+                                            aria-labelledby="bankinginfo-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <h2 class="font-weight-normal text-center">Banking Information</h2>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Bank Name</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Bank Address</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Institution Number</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Transit Number</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Account Number</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Swift Code</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Account Name</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="">Comments</label>
+                                                    <input type="text" class="form-control" placeholder="" id=""
+                                                        value="">
+                                                </div>
+                                                <div class="form-group pt-2 pt-md-3 text-center">
+                                                    <button
+                                                        class="btn btn-blue btn-block max-250 letter-sp-2">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="schoolcomission" role="tabpanel"
+                                            aria-labelledby="schoolcomission-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <h2 class="font-weight-normal text-center">School Commissions</h2>
+                                                <div class="table-responsive p-2">
+                                                    <table class="table profile-grade-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">G9</th>
+                                                                <th scope="col">G10</th>
+                                                                <th scope="col">G11</th>
+                                                                <th scope="col">G12</th>
+                                                                <th scope="col">ESL</th>
+                                                                <th scope="col">D1</th>
+                                                                <th scope="col">D2</th>
+                                                                <th scope="col">D3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Grade 9</td>
+                                                                <td>Grade 10</td>
+                                                                <td>Grade 11</td>
+                                                                <td>Grade 12</td>
+                                                                <td>English as Second Language (ESL)</td>
+                                                                <td>1-Year Post-Secondary Certificate</td>
+                                                                <td>2-Year Undergraduate Diploma</td>
+                                                                <td>3-Year Undergraduate Advanced Diploma</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered profile-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th rowspan="2">School</th>
+                                                                <th colspan="3">1 or More Recruits (75%)</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Level</th>
+                                                                <th>% of Net Tuition</th>
+                                                                <th>Average Commission
+                                                                    <sup>
+                                                                        <span data-toggle="tooltip" data-placement="top"
+                                                                            title="Please be advised that the amount indicated below is an estimate provided by the school and subject to change. This amount varies based on the fixed amount from the school or net tuition the school recieves from the student."
+                                                                            aria-hidden="true"
+                                                                            class="fa fa-question-circle"
+                                                                            currentitem="false"></span>
+                                                                    </sup>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td rowspan="1"> Richard Bland College of William &amp;
+                                                                    Mary</td>
+                                                                <td>B4</td>
+                                                                <td>11.25%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="2">Academy of Applied Pharmaceutical
+                                                                    Sciences</td>
+                                                                <td>PG</td>
+                                                                <td>Fixed</td>
+                                                                <td>$1,125.00 CAD
+                                                                    <sup>
+                                                                        <span data-toggle="tooltip" data-placement="top"
+                                                                            title="The Commission structure agreement is based on the respective school's confirmation of the student(s) successful full-time enrolment as long as they have passed the determined withdrawal date, are in good standing with the school and have no outstanding balance (in most cases). The terms stipulated are based on what is believed to be the current process however, many variables may contribute to the final determined amount or commission payout timeline (ie: ESL/ACD, Nationality, Amount of credit/courses, Transfer Policy (if any), Agent changes, and the Term and/or Program). Exclusions may apply. For further details or clarification please inquire through each student(s) ApplyBoard application page through the Notes tab."
+                                                                            aria-hidden="true"
+                                                                            class="fa fa-question-circle"
+                                                                            currentitem="false"></span>
+                                                                    </sup>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="1">ABC Access Business College</td>
+                                                                <td>D2</td>
+                                                                <td>18.75%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="5">Aberdeen Hall Preparatory School</td>
+                                                                <td>G9</td>
+                                                                <td>7.5%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>G10</td>
+                                                                <td>7.5%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>G11</td>
+                                                                <td>7.5%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>G7</td>
+                                                                <td>7.5%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>G8</td>
+                                                                <td>7.5%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="1">Academie Linguistique Internationale
+                                                                    (ALI)</td>
+                                                                <td>ESL</td>
+                                                                <td>Fixed</td>
+                                                                <td>$1,416.00 CAD </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td rowspan="4">Yukon University</td>
+                                                                <td>ESL</td>
+                                                                <td>15.0%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>D2</td>
+                                                                <td>15.0%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>B4</td>
+                                                                <td>15.0%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>D1</td>
+                                                                <td>15.0%</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane active" id="invitestudents" role="tabpanel"
+                                            aria-labelledby="invitestudents-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <div class="row align-items-md-center">
+                                                    <div class="col-12 col-sm-12 col-lg-7">
+                                                        <h1>Invite Your Students to Complete Their Admission
+                                                            Applications</h1>
+                                                        <p class="py-2 py-md-3">Give your students control over the
+                                                            admission process by letting them set up and manage their
+                                                            own profile, select the programs they are interested in, and
+                                                            submit and track their applications.</p>
+                                                        <p class="pt-2 pt-md-2">Create your unique referral link to
+                                                            share with students. This link cannot be modified.</p>
+                                                        <div class="form-group">
+                                                            <label class="control-label"
+                                                                for="">applyboard.com/partners/</label>
+                                                            <input type="text" class="form-control" placeholder="" id=""
+                                                                value="">
+                                                        </div>
+                                                        <div class="form-group pt-2">
+                                                            <button class="btn btn-blue letter-sp-2">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-lg-5">
+                                                        <img src="img/Invite_Students.svg" class="img-fluid" alt="img">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="commissionpolicy" role="tabpanel"
+                                            aria-labelledby="commissionpolicy-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <h2 class="font-weight-normal text-center">Commission Policy</h2>
+                                                <div class="row mt-md-4">
+                                                    <div class="col-12 col-sm-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="">Successful
+                                                                Recruits</label>
+                                                            <input type="text" class="form-control" placeholder="" id=""
+                                                                value="0" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="">Commission Rate</label>
+                                                            <input type="text" class="form-control" placeholder="" id=""
+                                                                value="75" disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="managestaff" role="tabpanel"
+                                            aria-labelledby="managestaff-tab">
+                                            <div class="profile-tab-inn-cont">
+                                                <h3 class="font-18 font-weight-500">Invite Staff Members</h3>
+                                                <h4 class="font-weight-500"><em>Maximum 5 staff accounts</em></h4>
+                                                <div class="row mt-md-4">
+                                                    <div class="col-12 col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="">First Name</label>
+                                                            <input type="text" class="form-control" placeholder="" id=""
+                                                                value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="">Last Name</label>
+                                                            <input type="text" class="form-control" placeholder="" id=""
+                                                                value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="">Email</label>
+                                                            <input type="email" class="form-control" placeholder=""
+                                                                id="" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-lg-12">
+                                                        <div class="form-group text-center">
+                                                            <button class="btn btn-blue letter-sp-2">SEND
+                                                                INVITATION</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="py-2">
+                                                    <h3 class="font-18 font-weight-500">Invited Staff Members</h3>
+                                                    <div class="table-responsive p-2 mt-md-3">
+                                                        <table class="table table-bordered profile-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">First Name</th>
+                                                                    <th scope="col">Last Name</th>
+                                                                    <th scope="col">Email</th>
+                                                                    <th scope="col">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td> </td> 
+                                                          </tr>  -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="py-2">
+                                                    <h3 class="font-18 font-weight-500">Approved Staff Members</h3>
+                                                    <div class="table-responsive p-2 mt-md-3">
+                                                        <table class="table table-bordered profile-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">First Name</th>
+                                                                    <th scope="col">Last Name</th>
+                                                                    <th scope="col">Email</th>
+                                                                    <th scope="col">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- <tr>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td> </td> 
+                                                          </tr>  -->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
 
                             </div>
                         </div>
-
-                        <div class="payment-box tab-shadow notesopen">
-                            <div class="table-responsive pt-2 pl-1">
-                                <table class="table pr-3">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <div>Actions</div>
-                                            </th>
-                                            <th>
-                                                <div>
-                                                    <a href="#">PEMS ID<i class="fa fa-arrow-up"
-                                                            data-original-title="" title=""></i></a>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <div>
-                                                    <a href="#"> Student's Email </a>
-                                                </div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">First Name</a></div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">Last Name</a></div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">Nationality</a></div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">Channel Partner</a></div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">CP Type</a></div>
-                                            </th>
-                                            <th>
-                                                <div><a href="#">Education</a></div>
-                                            </th>
-                                            <th>
-                                                <div>Applications</div>
-                                            </th>
-                                            <th>
-                                                <div>&nbsp;</div>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> &nbsp; </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <input type="text" class="form-control" placeholder="" id=""
-                                                        value="">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <select class="select2" data-placeholder="Select..."
-                                                        style="width: 100%;">
-                                                        <option disabled selected>Select...</option>
-                                                        <option value="1">Staff</option>
-                                                        <option value="1">Owner</option>
-                                                    </select>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <select class="select2" data-placeholder="Select..."
-                                                        style="width: 100%;">
-                                                        <option disabled selected>Select...</option>
-                                                        <option value="1">Diploma</option>
-                                                        <option value="1">Grade 1</option>
-                                                        <option value="1">Grade 2</option>
-                                                    </select>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="form-group mb-0">
-                                                    <select class="select2" data-placeholder="Select..."
-                                                        style="width: 100%;">
-                                                        <option disabled selected>Select...</option>
-                                                        <option value="1">Yes</option>
-                                                        <option value="1">No</option>
-                                                    </select>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="width-100">
-                                                    <div class="pb-2"> <a href="#" class="text-dark"
-                                                            data-toggle="tooltip" data-placement="top" title=""
-                                                            data-original-title="Filter"><i><img src="img/self/search-blk.svg" width="12px"></i> <span class="pt-1">Search</span></a></div>
-                                                    <div class="pb-2"><a href="#" class="text-dark"
-                                                            data-toggle="tooltip" data-placement="top" title=""
-                                                            data-original-title="Filter"><i><img src="img/self/filter.svg" width="12px"></i> Reset
-                                                            Filters</a></div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-info">BS</span>
-                                                <span class="d-block font-12">India</span>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-secondary badge-green w-100 mt-1">
-                                                    <i><img src="img/new/added.svg" width="18px"></i> <span class="px-3"> 3
-                                                        added</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-info w-100 mt-1">
-                                                    <i><img src="img/new/applied.svg" width="18px"></i> <span class="px-3"> 3
-                                                        applied</span>
-                                                </div>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-primary badge-prime w-100 mt-1">
-                                                    <i><img src="img/new/submitted.svg" width="18px"></i> <span class="px-3"> 1
-                                                        submitted</span>
-                                                </div>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-success badge-green w-100 mt-1">
-                                                    <i><img src="img/new/accepted.svg" width="18px"></i> <span class="px-3"> 1
-                                                        accepted</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-warning w-100 mt-1">
-                                                    <i><img src="img/new/cancelled.svg" width="18px"></i> <span
-                                                        class="px-3 txt-elipsis"> 1 canceled/withdrawn</span>
-                                                </div>
-                                            </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-info"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="d-block font-12">India</span>
-                                            </td>
-                                            <td>
-                                                &nbsp;
-                                            </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-info"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="d-block font-12">India</span>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-secondary badge-green w-100 mt-1">
-                                                    <i><img src="img/new/added.svg" width="18px"></i> <span class="px-3"> 3
-                                                        added</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-info w-100 mt-1">
-                                                    <i><img src="img/new/applied.svg" width="18px"></i> <span class="px-3"> 3
-                                                        applied</span>
-                                                </div>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-primary badge-prime w-100 mt-1">
-                                                    <i><img src="img/new/submitted.svg" width="18px"></i> <span class="px-3"> 1
-                                                        submitted</span>
-                                                </div> 
-                                            </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-secondary">1Y</span>
-                                                <span class="d-block font-12">India</span>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-secondary badge-green w-100 mt-1">
-                                                    <i><img src="img/new/added.svg" width="18px"></i> <span class="px-3"> 3
-                                                        added</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-info w-100 mt-1">
-                                                    <i><img src="img/new/applied.svg" width="18px"></i> <span class="px-3"> 3
-                                                        applied</span>
-                                                </div>  
-                                            </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-info">MS</span>
-                                                <span class="d-block font-12">United States</span>
-                                            </td>
-                                            <td> &nbsp; </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="width-85">
-                                                    <div class="p-2 d-inline-block w-26"> <a href="student-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard"><span><img src="img/new/dashboard.svg"></span></a> </div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="search-apply.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Quick Search"><span><img src="img/new/search.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"> <a href="profile-dashboard.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Student Profile"><span><img src="img/new/user.svg"></span></a></div>
-                                                    <div class="p-2 d-inline-block w-26"><a href="show-application.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="application"><span><img src="img/new/application.svg"></span></a></div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div>327036</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> magdiwarraveena7@gmail.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>Magdiwar</div>
-                                            </td>
-                                            <td>
-                                                <div>Raveena</div>
-                                            </td>
-                                            <td>
-                                                <div>India</div>
-                                            </td>
-                                            <td>
-                                                <div><a href="#"> director@prosperoverseas.com</a></div>
-                                            </td>
-                                            <td>
-                                                <div>owner</div>
-                                            </td>
-                                            <td>
-                                                <span class="badge badge-success badge-green"><i class="fa fa-check"
-                                                        aria-hidden="true"> </i></span>
-                                                <span class="badge badge-info">BS</span>
-                                                <span class="d-block font-12">India</span>
-                                            </td>
-                                            <td>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-secondary badge-green w-100 mt-1">
-                                                    <i><img src="img/new/added.svg" width="18px"></i> <span class="px-3"> 3
-                                                        added</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-info w-100 mt-1">
-                                                    <i><img src="img/new/applied.svg" width="18px"></i> <span class="px-3"> 3
-                                                        applied</span>
-                                                </div>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-primary badge-prime w-100 mt-1">
-                                                    <i><img src="img/new/submitted.svg" width="18px"></i> <span class="px-3"> 1
-                                                        submitted</span>
-                                                </div>
-                                                <div
-                                                    class="d-flex align-items-center h-30 badge badge-success badge-green w-100 mt-1">
-                                                    <i><img src="img/new/accepted.svg" width="18px"></i> <span class="px-3"> 1
-                                                        accepted</span>
-                                                </div>
-                                                <div class="d-flex align-items-center h-30 badge badge-warning w-100 mt-1">
-                                                    <i><img src="img/new/cancelled.svg" width="18px"></i> <span
-                                                        class="px-3 txt-elipsis"> 1 canceled/withdrawn</span>
-                                                </div>
-                                            </td>
-                                            <td> &nbsp; </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-
-                        <hr class="my-3">
-
-                        <div class="table-pagination">
-                            <div class="table-pagination-center justify-content-end">
-                                <span class="table-pagination-center-pageInfo">Page <div
-                                        class="table-pagination-center-pageJump">
-                                        <input class="form-control" type="number" value="1">
-                                    </div> of <span class="-totalPages">1</span></span>
-
-                            </div>
-                        </div>
-
-
                     </div>
 
                 </div>
@@ -863,44 +892,6 @@
 
         </div>
     </div>
-
-
-    <!-- RegisterStudent Modal Start -->
-    <div class="modal" id="registerstd-modal" tabindex="-1" role="dialog" aria-labelledby="registerstdtModal"
-        aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog registerstd-modal modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button style="outline: none;" type="button" class="close" data-dismiss="modal"><img
-                            class="mod-clse" src="img/close.svg"></button>
-                    <h4 class="modal-title font-35">Register a New Student</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Please provide a legitimate email address for your student that is actively monitored by them.
-                        Their email is required to forward applications to our partner schools. Note: ApplyBoard will
-                        not communicate with your student via email or other methods.</p>
-                    <div class="row mt-md-4">
-                        <div class="col-12 col-sm-3 col-md-2 form-group">
-                            <label class="control-label" for="">Email</label>
-                        </div>
-                        <div class="col-12 col-sm-9 col-md-7 form-group">
-                            <input type="email" class="form-control" placeholder="" id="" value="">
-                        </div>
-                        <a href="profile-dashboard.html"><div class="btn-center">
-                            <input type="button" value="Continue" class="btn btn-blue max-150" id="">
-                        </div></a>
-                    </div>
-                    <!-- <div class="form-group mb-0 text-center">  
-                        
-                    </div> -->
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- RegisterStudent Modal End -->
-
     <div class="modal" id="setting-users">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -950,7 +941,6 @@
             </div>
         </div>
     </div>
-    
     <div class="modal" id="feedback-modal-header" tabindex="-1" role="dialog" aria-labelledby="feedbackModal"
         aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog feedback-modal modal-dialog-centered" role="document">
@@ -1075,7 +1065,6 @@
         });
 
     </script>
-
 
     <script src="js/plugincharts.js"></script>
     <script>
@@ -1355,8 +1344,6 @@
                 "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
                 "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "us", "gb"]
         });
-
-        $('.select2').select2();
     </script>
 
 

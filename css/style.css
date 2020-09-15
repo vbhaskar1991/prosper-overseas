@@ -4323,6 +4323,8 @@ transform: rotate(360deg);
     .schools-box .user-panel .info p{font-size: 14px !important;}
 }
 @media (max-width: 767px) {
+    .recent-new-content{padding: 0px 10px !important;}
+.channel-partner-content{    padding: 0px 10px !important;}
     .col-main-search{display: block !important;}
       .program-step-2 .form-control{    margin-top: 15px;
     margin-bottom: 15px;}
@@ -4366,3 +4368,68 @@ transform: rotate(360deg);
 @media(max-width:1180px) and (min-width:992px){
     .dashboard-tabs .nav-tabs .nav-link{min-width: 120px;}
 }
+
+/*===== landing pages content ======*/
+.recent-new-content{padding: 0px 20px;}
+.channel-partner-content{    padding: 0px 50px;}
+.channel-partner-content h4, .recent-new-content h4{ font-size: 30px;
+    color: #2A166F;
+    letter-spacing: 1px; 
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 0px 20px;}
+.channel-partner-content .box h2{    font-family: 'proxima_nova_ltlight';
+    font-size: 21px;
+    color: #222222;
+    font-weight: 600;}
+.channel-partner-content .box{padding-bottom: 15px;}
+.channel-partner-content .box ul{list-style: none; padding-left: 0px;}
+.channel-partner-content .box ul li a{    color: #2A166F;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;}
+.resource-content{padding: 0px 5px;}
+.resource-content .resource-align{    display: flex;
+    align-items: center;
+    padding-bottom: 10px;}
+.resource-content .resource-align .resource-img img{    border-radius: 50%;
+    box-shadow: 0px 6px 6px rgba(0,0,0,0.16);}
+.resource-content .resource-align .resource-text{padding-left: 15px;}
+.resource-content .resource-align .resource-text h2{margin-bottom: 0px;}
+.mb-15{margin-bottom: 15px;}
+.h1-heading{font-size: 30px;
+    color: #2A166F;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding: 10px 0px 20px;}
+.recent-new-box{    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 10px 0px 0;     margin-bottom: 30px;}
+.recent-new-box h5{padding: 10px 10px;     height: 100px;}
+.recent-new-box h5 a{font-size: 18px; font-weight: 400;  color: #727272; line-height: 24px;}
+.recent-new-box p{    padding: 10px; border-top: 1px solid rgba(114,114,114,0.20);}
+.newsletter-inputbtn{    padding-bottom: 30px;}
+.newsletter-inputbtn .form-control{     height: 50px;}
+.newsletter-inputbtn .btn-black{    background: #2A166F; padding: 0 20px;}
+.newsletter-inputbtn .btn-black i svg path{ fill: #fff;}
+.associate-box{padding: 0px 15px;}
+.associate-box p{font-size: 16px; font-weight: 400;}
+.associate-box h6, .associate-box h5{font-size: 18px; text-align: center; padding: 15px 0px; font-weight: 600}
+.associate-box h3{    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 400;}
+.associate-box input{border: 0;
+    border-bottom: 1px solid;}
+.associate-box ul{list-style: upper-latin;}
+.breadcrumb-item+.breadcrumb-item{    padding-left: .1rem;}
+.university-box{    padding: 12px 12px 5px;
+    box-shadow: 0 0.15rem 1.15rem 0 rgba(31, 45, 65, 0.15);
+    border: 1px solid #e2ebf7 !important;
+    border: 0;
+    border-radius: 9px;
+    background: #fff;}
+.university-box h2{font-size: 17px;}
+.commission .table > tbody > tr > td{padding: 10px 7px !important;}
